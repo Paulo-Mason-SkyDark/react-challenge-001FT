@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Image from 'next/image';
 import LogoImg from '../../../assets/images/Badgelogo.svg';
+import {Container} from './style';
 
 class NavBar extends Component {
     constructor(props) {
@@ -8,16 +9,20 @@ class NavBar extends Component {
     }
     render() {
         return (
-            <div>
-                <Image src={LogoImg} alt="Picture of the author" />
-                <nav>
-                    <li>Create Your Nanny Share</li>
-                    <li>Browse Shares</li>
-                    <li>Our Story</li>
+            <Container>
+                <div>
+                    <Image src={LogoImg} alt="logo hapu" />
+                    <nav>
+                        <li>Create Your Nanny Share</li>
+                        <li>Browse Shares</li>
+                        <li>Our Story</li>
+                    </nav>
+                </div>
+                <div>
                     <li>Become a Nanny Share Host</li>
                     <li>Sign In</li>
-                </nav>
-            </div>
+                </div>
+            </Container>
         );
     }
 }

@@ -1,7 +1,12 @@
 import { Component } from "react";
 import Image from 'next/image';
-import HeaderImg from '../../assets/images/ImageHeader.svg';
+import HeaderImgLeft from '../../assets/images/ImageHeader.svg';
+import HeaderImgBG from '../../assets/images/Image.svg';
+
 import PlayButton from '../../assets/icons/PlayButtonIcon.svg';
+
+//import of styles js
+import{ HeaderBG }from './style';
 
 //imports of components
 import NavBar from '../header/navbar/index';
@@ -12,7 +17,7 @@ class Header extends Component{
     }
     render(){
         return (
-            <header>
+            <HeaderBG background='#9451d0' backgroundImage={HeaderImgBG}>
                 <NavBar/>
                 <div className="TextAlignLeft">
                     <h1>
@@ -29,9 +34,9 @@ class Header extends Component{
                     </div>
                 </div>
                 <div className="cardInfomatioRight">
-                    <Image src={HeaderImg} />
+                    <Image src={HeaderImgLeft} />
                 </div>
-            </header>
+            </HeaderBG>
         );
     }
 }
