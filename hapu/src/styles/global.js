@@ -9,7 +9,7 @@ export default createGlobalStyle`
     outline: 0;
   }
 
-  body {
+  body, input, textarea, button {
     color: black;
     -webkit-font-smoothing: antialiased;
     font-family: 'Inter', sans-serif;
