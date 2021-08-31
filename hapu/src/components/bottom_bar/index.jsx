@@ -5,7 +5,7 @@ import Image from 'next/image';
 //import {Container} from './styles';
 
 //import assets
-import logoImg from '../../assets/icons/logofooter.svg';
+import logoImg from '../../assets/icons/Logofooter.svg';
 
 export default class BottomBar extends Component {
     constructor(props) {
