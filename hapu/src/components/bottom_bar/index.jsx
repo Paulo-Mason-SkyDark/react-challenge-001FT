@@ -1,36 +1,36 @@
 import { Component } from "react";
 import Image from 'next/image';
 
-import logoImg from '../../assets/images/Badgelogo.svg';
-import { Container, LeftContent, RightContent, ButtonPrimary, ButtonSecondary } from './styles';
+//import styles
+//import {Container} from './styles';
 
-class NavBar extends Component {
+//import assets
+import logoImg from '../../assets/icons/logofooter.svg';
+
+export default class BottomBar extends Component {
     constructor(props) {
         super(props);
     }
 
     render() {
         return (
-            <Container>
-                <LeftContent>
-                    <Image src={logoImg} alt="logo hapu" />
+            <div>
+                <Image src={logoImg} alt="logo hapu" />  
+                <div>
                     <nav>
                         <ul>
                             <a href=""><li>Create Your Nanny Share</li></a>
                             <a href=""><li>Browse Shares</li></a>
                             <a href=""><li>Our Story</li></a>
                         </ul>
-                        
                     </nav>
-                </LeftContent>
-
-                <RightContent>
-                    <ButtonPrimary>Become a Nanny Share Host</ButtonPrimary>
+                </div>
+                <div>
+                    <h2>Become a Nanny Share Host</h2>
                     <a href=""><span>Sign In</span></a>
-                </RightContent>
-            </Container>
+                </div>
+            </div>
         );
     }
 }
 
-export default NavBar;

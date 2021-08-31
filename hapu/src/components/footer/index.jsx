@@ -4,7 +4,7 @@ import { Component } from "react";
 import BottomBar from '../bottom_bar/index';
 
 //import styled
-import { ButtonCreateNany, Container, ContentWrapper } from './styles';
+import { ButtonCreateNany, FooterContainer, ContentWrapper } from './styles';
 
 export default class Footer extends Component {
     constructor(props) {
@@ -12,7 +12,8 @@ export default class Footer extends Component {
     }
     render() {
         return (
-            <Container>
+            <>
+            <FooterContainer>
                 <ContentWrapper>
                     <h2>
                         Become a nanny share host
@@ -27,8 +28,9 @@ export default class Footer extends Component {
                         Or browse local nanny-shares
                     </p>
                 </ContentWrapper>
-                <BottomBar />
-            </Container>
+            </FooterContainer>
+            <BottomBar />
+            </>
         );
     }
 }
