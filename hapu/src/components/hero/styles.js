@@ -6,6 +6,8 @@ export const HeroBG = styled.header`
   height: 100vh;
 
   background-color: #9451d0;
+  background: url('../../assets/Image.svg') no-repeat, linear-gradient(#C86DD7,#7E49C3, #5912AC);
+    background-size: cover;
   /* background-image: url(${props => props.bg}); */
 `;
 
