@@ -9,10 +9,36 @@ export const Container = styled.div`
     margin-top: 80px;
 `;
 
+export const Divider = styled.hr`
+    border: 2px solid #DFDFDF;
+    width: 60%;
+`;
+
+export const ButtonSend = styled.button`
+
+    &:hover{
+      background: #008256f2;
+    }
+
+    background: #00A870;
+    border-radius: 4px;
+    border-style: none;
+    width: 96px;
+    height: 48px;
+
+    //styles text
+    color: #fff;  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+`;
+
+
 
 export const TitleSection = styled.h3`
 
-    padding: 40px 0px 40px 0px;
+    padding: 64px 0px 40px  0px;
     color: #3D3D3D;
     font-style: normal;
     font-weight: 500;
@@ -37,18 +63,29 @@ width: 65%;
 
 
 export const Input = styled.input`
-  font-size: 16px;
-  border: solid 1px #dbdbdb;
-  border-radius: 3px;
-  color: #262626;
-  padding: 7px 33px;
-  border-radius: 3px;
-  color: #999;
-  cursor: text;
+
+  &:hover { 
+    background: #ddd;
+  }
+
+  background: #FFFFFF;
+  border: 1px solid #DFDFDF;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
-  font-weight: 300;
-  text-align: center;
-  background: #fafafa;
+  line-height: 20px; 
+  color: #3D3D3D;
+
+  width: 232px;
+  height: 48px;
+
+
+  cursor: text;
+  margin: 74px 12px 64px  0px;
+  padding-left: 20px;
   &:active,
   &:focus {
     text-align: left;
