@@ -1,7 +1,7 @@
 import { Component } from "react";
-import Image from 'next/image';
+import Image from "next/image";
 
-import logoImg from '../../assets/images/Badgelogo.svg';
+import logoImg from "../../assets/images/Badgelogo.svg";
 import { Container, LeftContent, RightContent, ButtonPrimary, ButtonSecondary } from './styles';
 
 class NavBar extends Component {

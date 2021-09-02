@@ -15,4 +15,8 @@ export default createGlobalStyle`
     font-family: 'Inter', sans-serif;
   }
 
+  body {
+    background-color: #F2F2F2;
+  }
+
 `;

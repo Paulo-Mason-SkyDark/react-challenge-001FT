@@ -1,15 +1,18 @@
 import styled from 'styled-components';
+import bgImg from '../../assets/images/Image.png';
+
 
 
 export const HeroBG = styled.header`
   top: 0;
   height: 100vh;
 
-  background-color: #9451d0;
-  background: url('../../assets/Image.svg') no-repeat, linear-gradient(#C86DD7,#7E49C3, #5912AC);
+  background: no-repeat, linear-gradient(#C86DD7,#7E49C3, #5912AC);
     background-size: cover;
   /* background-image: url(${props => props.bg}); */
 `;
+
+
 
 export const HeroContent = styled.div`
   height: calc(100% - 64px);
