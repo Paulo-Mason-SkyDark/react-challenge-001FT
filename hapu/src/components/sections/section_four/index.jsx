@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Image from 'next/image';
 
-import nannyImg from '../../../assets/images/imageSection4.svg';
+import nannyImg from '../../../assets/images/ImageSection4.svg';
 
 import {Container, Content} from './styles';
 
