@@ -2,7 +2,7 @@ import { Component } from "react";
 import Image from 'next/image';
 
 //import styles
-//import {Container} from './styles';
+import {Container, NavContent, IconsContent, Copy } from './styles';
 
 //import assets
 import logoImg from '../../assets/icons/Logofooter.svg';
@@ -14,22 +14,29 @@ export default class BottomBar extends Component {
 
     render() {
         return (
-            <div>
-                <Image src={logoImg} alt="logo hapu" />  
-                <div>
-                    <nav>
-                        <ul>
-                            <a href=""><li>Create Your Nanny Share</li></a>
-                            <a href=""><li>Browse Shares</li></a>
-                            <a href=""><li>Our Story</li></a>
-                        </ul>
-                    </nav>
-                </div>
-                <div>
-                    <h2>Become a Nanny Share Host</h2>
-                    <a href=""><span>Sign In</span></a>
-                </div>
-            </div>
+            <>
+                <Container>
+                    <Image src={logoImg} alt="logo hapu" />  
+                    <NavContent>
+                        <nav>
+                            <ul>
+                                <a href=""><li>Share Your Nanny</li></a>
+                                <a href=""><li>Our Story</li></a>
+                                <a href=""><li>Blog</li></a>
+                                <a href=""><li>Terms and Privacy</li></a>
+                            </ul>
+                        </nav>
+                    </NavContent>
+                    <IconsContent>
+                        Redes Sociais
+                    </IconsContent>
+                    
+                </Container>
+                <Copy>
+                    <p>Copyright © 2017 Hapu PTY Limited All rights reserved</p>
+                </Copy>
+            </>
+            
         );
     }
 }

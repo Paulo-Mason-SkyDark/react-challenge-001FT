@@ -2,35 +2,46 @@ import styled from 'styled-components';
 
 
 export const FooterContainer = styled.footer`
-
-    background-color: #FFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 80px;
+    background: #fff;
 
 `;
 
 export const ContentWrapper = styled.main`
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
 
+    > h2 {
+        font-size: 28px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 24px;
+    }
 
+    > p {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 24px;
+    }
 `;
 
-export const ButtonCreateNany = styled.div`
-    height: 68px;
-    width: 304px;
+export const ButtonCreateNany = styled.button`
+    padding: 20px 42px;
     border-radius: 2px;
-    font-size: 14px;
-    font-weight: 500;
     background: #5E20A4;
-    color: white;
-    padding: 0 18px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 
     cursor: pointer;
     border: 0;
+
+    > span {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+    }
+
 `;

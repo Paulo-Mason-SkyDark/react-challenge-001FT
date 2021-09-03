@@ -7,7 +7,7 @@ import ImgBookChild from "../../../assets/images/img_book_childs.svg";
 //import styles for project
 import {Container, TitleSection, Paragraph} from "./style";
 
-export default class PreFooterSession extends Component {
+export default class SectionFive extends Component {
     constructor(props) {
         super(props);
     }

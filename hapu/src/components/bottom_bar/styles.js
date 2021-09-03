@@ -3,13 +3,14 @@ import styled from 'styled-components';
 export const Container = styled.div`
     height: 64px;
     margin: 0 auto;
-    padding: 0 2%;
+    margin-top: 60px;
+    
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
 `;
 
-export const LeftContent = styled.div`
+export const NavContent = styled.div`
     display: flex;
     align-items: center;
     
@@ -23,40 +24,21 @@ export const LeftContent = styled.div`
 
             > li {
                 margin-left: 24px;
-                color: white;
+                color: black;
             }
         }
     }
 `;
 
-export const RightContent = styled.div`
-    height: 100%;
+export const IconsContent = styled.div`
     display: flex;
     align-items: center;
-
-    > a {
-        text-decoration: none;
-
-        > span {
-            font-size: 14px;
-            font-weight: 500;
-            color: white;
-            margin-left: 24px;
-
-            cursor: pointer;
-        }
-    }
 `;
 
-export const ButtonPrimary = styled.button`
-    height: 36px;
-    border-radius: 2px;
-    font-size: 14px;
-    font-weight: 500;
-    background: #3cb54a;
-    color: white;
-    padding: 0 18px;
 
-    cursor: pointer;
-    border: 0;
+export const Copy = styled.div`
+    font-size: 14px;
+    color: #3D3D3D;
+    text-align: center;
+    padding: 24px 0;
 `;

@@ -1,12 +1,10 @@
 import { Component } from "react";
 import Image from 'next/image';
-import HeaderImgLeft from '../../assets/images/ImageHeader.svg';
 
-import PlayButton from '../../assets/icons/PlayButtonIcon.svg';
-import bgImg from '../../assets/images/Image.svg';
+import headerImgLeft from '../../assets/images/ImageHeader.svg';
+import playButton from '../../assets/icons/PlayButtonIcon.svg';
 
-//import of styles js
-import { HeroBG, HeroContent, TextLeft } from './styles';
+import styles from './styles.module.css';
 
 //imports of components
 import NavBar from '../Navbar';
@@ -18,31 +16,35 @@ class Hero extends Component {
 
     render() {
         return (
-
-            <HeroBG>
+            <div className={styles.container}>
                 <NavBar />
-                <HeroContent>
-                    <TextLeft>
-                        <h1>
-                            Easily create or join a local <br /> nanny share with Hapu
-                        </h1>
-                        <p>
-                            Hapu is Airbnb for nanny share.
-                            Share your home, nanny and costs <br />
-                            and create new flexible,
-                            affordable solutions in childcare.
-                        </p>
-                        <div>
-                            <Image src={PlayButton} />
-                            <span>See hapu in action (27 seconds)</span>
+                <section className={styles.section}>
+                    <div className={styles.containerGrid}>
+                        <div className={styles.description}>
+                            <h2>
+                                Easily create or join a local <br /> nanny share with Hapu
+                            </h2>
+                            <p>
+                                Hapu is Airbnb for nanny share.
+                                Share your home, nanny and costs <br />
+                                and create new flexible,
+                                affordable solutions in childcare.
+                            </p>
+                            <div className={styles.descriptionTwo}>
+                                <Image src={playButton} alt="PlayIcon" />
+                                <span>See hapu in action (27 seconds)</span>
+                            </div>
                         </div>
-                    </TextLeft>
-                    <div className="cardInfomatioRight">
-                        <Image src={HeaderImgLeft} />
+                        <div className={styles.image}>
+                            <div>
+                                <Image src={headerImgLeft} alt="" />
+                            </div>
+                        </div>
+                        
                     </div>
-                </HeroContent>
-                
-            </HeroBG>
+                </section>
+
+            </div>
         );
     }
 }

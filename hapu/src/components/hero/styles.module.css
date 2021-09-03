@@ -1,0 +1,44 @@
+.container {
+    background: url('../../assets/images/Image.svg') no-repeat, linear-gradient(#C86DD7,#7E49C3, #5912AC);
+    background-size: cover;
+
+    top: 0;
+    height: 100vh;
+}
+
+
+.section .containerGrid {
+    height: calc(100vh - 64px);
+    padding: 0 2%;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section .description h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.section .description p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.section .description .descriptionTwo {
+    display: flex;
+    align-items: center;
+}
+
+.section .description .descriptionTwo span {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-left: 18px;
+}

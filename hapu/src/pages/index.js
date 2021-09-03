@@ -1,14 +1,18 @@
 import Hero from "../components/hero";
 import Footer from "../components/footer/index";
-import SectionChild from "../components/sections/section_child/index";
-import InputSession from "../components/sections/section_input/index";
+import SectionFive from "../components/sections/section_five/index";
+import SectionOne from '../components/sections/section_one';
+import SectionTwo from '../components/sections/section_two';
+import SectionFour from '../components/sections/section_four';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <InputSession />
-      <SectionChild />
+      <SectionOne />
+      <SectionTwo />
+      <SectionFour />
+      <SectionFive />
       <Footer />
     </>
   );
