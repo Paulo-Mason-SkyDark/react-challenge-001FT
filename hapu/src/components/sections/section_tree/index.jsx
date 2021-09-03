@@ -1,29 +1,24 @@
 import { Component } from "react";
 import Image from 'next/image';
 
-import nannyImg from '../../../assets/images/NannyValuesImage.svg';
-import circleAvatar from '../../../assets/images/ProfileImage.svg';
+//import images
+import chooseAmount from '../../../assets/images/ImageSection3.svg';
 
-import { Card, Container, ContentInfo, LeftText, RightImg} from './styles';
+//import styles
+import {Container, ContentInfo, RightText} from './styles';
 
-class SectionOne extends Component {
+export default class SectionTree extends Component {
     constructor(props) {
         super(props);
     }
 
     render() {
         return (
-          <>
-            <Card>
-               <Image src={circleAvatar} alt="profile avatar" />
-              <a href="">Sarah’s day care available now in North Sydney</a>
-              <span>Wednesday, Thursday, Friday - 7:30 - 5:30</span>
-            </Card>
-
             <Container>
                 <ContentInfo>
-                  <LeftText>
-                    <h2>Share your home, <br/> nanny and costs</h2>
+                    <Image src={chooseAmount} alt="choose amount"  width="456" height="336px"/>
+                  <RightText>
+                    <h2>Share your home, nanny and costs</h2>
                     <p>
                       You have a fantastic home, a fantastic nanny and wouldn’t <br/>
                       cutting your costs in half be, well, fantastic?! If only it <br/>
@@ -36,16 +31,10 @@ class SectionOne extends Component {
                     </p>
 
                     <a href="">Ready to get started?</a>
-                  </LeftText>
-                  <RightImg>
-                    <Image src={nannyImg} alt="Image Book" />
-                  </RightImg>
+                  </RightText>
                 </ContentInfo>
             </Container>
-          </>
-            
         );
     }
 }
 
-export default SectionOne;

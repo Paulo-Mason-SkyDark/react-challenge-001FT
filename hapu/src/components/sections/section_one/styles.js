@@ -3,8 +3,18 @@ import styled from 'styled-components';
 export const Card = styled.section`
   border-bottom: 2px solid #ddd;
 
-  padding: 40px 0;
+  padding: 10px 0;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > a {
+    padding-left: 32px;
+    padding-right: 10px;
+  }
+
 `;
 
 export const Container = styled.section`
