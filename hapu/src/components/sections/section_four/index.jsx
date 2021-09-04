@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import nannyImg from '../../../assets/images/ImageSection4.svg';
 
-import {Container, Content} from './styles';
+import {Container, Content, Divider} from './styles';
 
 class SectionTwo extends Component {
     constructor(props) {
@@ -13,6 +13,7 @@ class SectionTwo extends Component {
     render() {
         return (
             <Container>
+                <Divider />
                 <Content>
                     <h2>A framework built for the long term</h2>
                     <p>
@@ -30,6 +31,7 @@ class SectionTwo extends Component {
                     </div>
                     
                 </Content>
+                <Divider />
             </Container>
         );
     }

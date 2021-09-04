@@ -2,10 +2,13 @@ import { Component } from "react";
 import Image from 'next/image';
 
 //import styles
-import {Container, NavContent, IconsContent, Copy } from './styles';
+import { Container, NavContent, IconsContent, Copy, Width } from './styles';
 
 //import assets
 import logoImg from '../../assets/icons/Logofooter.svg';
+import Facebook from '../../assets/icons/Facebook.svg';
+import Instagram from '../../assets/icons/Instagram.svg';
+import Twitter from '../../assets/icons/Twitter.svg';
 
 export default class BottomBar extends Component {
     constructor(props) {
@@ -16,7 +19,7 @@ export default class BottomBar extends Component {
         return (
             <>
                 <Container>
-                    <Image src={logoImg} alt="logo hapu" />  
+                    <Image src={logoImg} alt="logo hapu" />
                     <NavContent>
                         <nav>
                             <ul>
@@ -28,15 +31,19 @@ export default class BottomBar extends Component {
                         </nav>
                     </NavContent>
                     <IconsContent>
-                        Redes Sociais
+                        <Image  src={Facebook} alt="logo facebook" width="45" height="45" />
+                        <Width>
+                        <Image src={Twitter} alt="logo twitter" width="45" height="45" />
+                        </Width>
+                        <Image src={Instagram} alt="logo instagram" width="45" height="45" />
                     </IconsContent>
-                    
                 </Container>
                 <Copy>
+                    <hr />
                     <p>Copyright © 2017 Hapu PTY Limited All rights reserved</p>
                 </Copy>
             </>
-            
+
         );
     }
 }

@@ -14,9 +14,7 @@ export default class SectionFive extends Component {
 
     render() {
         return (
-            <>
             <Container>
-                
                 <Image src={ImgBookChild} height="96"  alt="image book child"/>
                 <TitleSection>Coming soon: Nanny Share Daily Diary!</TitleSection>
                 <Paragraph>With the Hapu daily diary your nanny will be 
@@ -26,7 +24,6 @@ export default class SectionFive extends Component {
                     to login to view the daily adventures fo your 
                     little ones. We can’t wait!</Paragraph>
             </Container>
-            </>
         );
 
     }

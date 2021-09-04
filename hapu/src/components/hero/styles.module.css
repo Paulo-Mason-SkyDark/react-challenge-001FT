@@ -42,3 +42,40 @@
     color: white;
     margin-left: 18px;
 }
+
+@media screen and(max-width: 361px){
+    .grid, .buttons .button:nth-child(2), .image img {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .buttons .button:nth-child(1){
+        margin-top: -1rem;
+    }
+    
+    .description {
+        text-align: center;
+    }
+
+    .descriptionTwo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .containerGrid {
+        display: block;
+    }
+
+    .containerDiv img {
+        margin: 0 auto;
+    }
+
+    .containerDiv {
+        display:grid;
+        grid-template-rows: auto;
+        text-align: center;
+        row-gap: 1rem;
+    }
+}
