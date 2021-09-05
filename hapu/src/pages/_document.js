@@ -43,3 +43,4 @@ export default class MyDocument extends Document {
     )
   }
 }
+// desenvolvido por Paulo Daniel de Araújo - SkyDark - Mason

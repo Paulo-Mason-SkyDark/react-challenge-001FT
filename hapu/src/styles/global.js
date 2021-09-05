@@ -19,4 +19,8 @@ export default createGlobalStyle`
     background-color: #F2F2F2;
   }
 
+  hr {
+    border: 1px solid #DFDFDF;
+  }
+
 `;

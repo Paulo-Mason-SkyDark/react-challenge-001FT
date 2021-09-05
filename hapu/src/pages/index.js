@@ -29,3 +29,4 @@ export function getStaticProps() {
     },
   };
 }
+// desenvolvido por Paulo Daniel de Araújo - SkyDark - Mason

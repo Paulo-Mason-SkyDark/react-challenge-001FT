@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Card = styled.section`
+
+  background-color: #FFF;
   border-bottom: 2px solid #ddd;
 
   padding: 10px 0;
@@ -17,31 +19,62 @@ export const Card = styled.section`
 
 `;
 
-export const Container = styled.section`
-  max-width: 1120px;
-  margin: 40px auto;
+export const Container = styled.div`
+    margin: 96px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+`;
+
+export const BoxImage = styled.div`
+    display: flex;
+    width: 584px;
+    height: 392px;
+    margin-left: 56px;
+    
+`;
+
+export const BoxContraints = styled.div`
+
+// caso necessite de novas mudanças
 
 `;
 
-export const ContentInfo = styled.section`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-export const LeftText = styled.section`
-  
-  > h2 {
-    font-size: 32px;
+export const TitleSection = styled.h2`
+    font-style: normal;
     font-weight: 500;
-    margin-bottom: 24px;
-  }
-
-  > p {
-    margin-bottom: 20px;
-  }
+    font-size: 28px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #3D3D3D;
 `;
 
-export const RightImg = styled.section`
-  
+export const Paragraph = styled.p`
+
+    margin: 40px 0;
+
+    text-align: justify;
+    width:444px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #4A4A4A;
+
+
+
+`;
+
+export const ToLink = styled.a`
+
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #5E20A4;
 `;

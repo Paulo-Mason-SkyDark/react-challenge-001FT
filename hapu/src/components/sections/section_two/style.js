@@ -88,7 +88,7 @@ export const Divider = styled.hr`
 //     font-weight: 500;
 //     font-size: 14px;
 //     line-height: 20px;
-
+// desenvolvido por Paulo Daniel de Araújo - SkyDark - Mason
 // `;
 
 
@@ -96,11 +96,14 @@ export const Divider = styled.hr`
 export const TitleSection = styled.h3`
 
     padding: 64px 0px 40px  0px;
-    color: #3D3D3D;
     font-style: normal;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3D3D3D;
     
 
 `;
@@ -109,8 +112,8 @@ export const Paragraph = styled.p`
 
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 24px;
   text-align: center;
   color: #3D3D3D;
   width: 65%;
@@ -151,3 +154,4 @@ export const Paragraph = styled.p`
 //     text-align: left;
 //   }
 // `
+// desenvolvido por Paulo Daniel de Araújo - SkyDark - Mason

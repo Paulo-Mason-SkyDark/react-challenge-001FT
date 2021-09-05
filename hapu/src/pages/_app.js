@@ -7,7 +7,7 @@ import GlobalStyle from '../styles/global';
 export default function App({ Component, pageProps }) {
   return (
     <>
-    <title>Hapu</title>
+    <title>Hapu - Developer SkyDark-Mason</title>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
@@ -15,3 +15,5 @@ export default function App({ Component, pageProps }) {
     </>
   )
 }
+
+// desenvolvido por Paulo Daniel de Araújo - SkyDark - Mason

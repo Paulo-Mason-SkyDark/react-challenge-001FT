@@ -22,3 +22,4 @@ export default function CircularIndeterminate() {
     </div>
   );
 }
+// desenvolvido por Paulo Daniel de Araújo - SkyDark - Mason

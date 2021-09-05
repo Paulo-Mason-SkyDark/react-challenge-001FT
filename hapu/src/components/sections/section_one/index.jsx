@@ -4,48 +4,45 @@ import Image from 'next/image';
 import nannyImg from '../../../assets/images/NannyValuesImage.svg';
 import circleAvatar from '../../../assets/images/ProfileImage.svg';
 
-import { Card, Container, ContentInfo, LeftText, RightImg} from './styles';
+import { Card, Container, BoxImage, BoxContraints, ToLink, TitleSection, Paragraph } from './styles';
 
 class SectionOne extends Component {
-    constructor(props) {
-        super(props);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    render() {
-        return (
-          <>
-            <Card>
-               <Image src={circleAvatar} alt="profile avatar" />
-              <a href="">Sarah’s day care available now in North Sydney</a>
-              <span>Wednesday, Thursday, Friday - 7:30 - 5:30</span>
-            </Card>
+  render() {
+    return (
+      <>
+        <Card>
+          <Image src={circleAvatar} alt="profile avatar" />
+          <a href="">Sarah’s day care available now in North Sydney</a>
+          <span>Wednesday, Thursday, Friday - 7:30 - 5:30</span>
+        </Card>
 
-            <Container>
-                <ContentInfo>
-                  <LeftText>
-                    <h2>Share your home, <br/> nanny and costs</h2>
-                    <p>
-                      You have a fantastic home, a fantastic nanny and wouldn’t <br/>
-                      cutting your costs in half be, well, fantastic?! If only it <br/>
-                      was easy to connect with other parents to share your costs? <br/>
-                      Well now it is, with Hapu. Hapu means tribe and it’s our <br/>
-                      foundational 3 tribal principles that empowers you to create <br/>
-                      and manage your own tribe. A tribe that together has the <br/>
-                      power to create new affordable solutions in childcare that <br/>
-                      work for you and your community.
-                    </p>
+        <Container>
+          <BoxContraints>
+            <TitleSection>Share your home, <br/> nanny and costs</TitleSection>
+            <Paragraph>You have a fantastic home, a fantastic nanny
+               and wouldn’t cutting your costs in half be, well, 
+               fantastic?! If only it was easy to connect with
+               other parents to share your costs? Well now it is,
+                with Hapu. <ToLink href="#">Hapu means tribe</ToLink> and it’s our foundational 
+                3 tribal principles that empowers you to create 
+                and manage your own tribe. A tribe that together
+                has the power to create new affordable solutions 
+                in childcare that work for 
+                you and your community.</Paragraph>
+            <ToLink href="#">Read how Bridget’s share (without Hapu) ended over $15</ToLink>
+          </BoxContraints>
+          <BoxImage>
+            <Image src={nannyImg} />
+          </BoxImage>
+        </Container>
+      </>
 
-                    <a href="">Ready to get started?</a>
-                  </LeftText>
-                  <RightImg>
-                    <Image src={nannyImg} alt="Image Book" />
-                  </RightImg>
-                </ContentInfo>
-            </Container>
-          </>
-            
-        );
-    }
+    );
+  }
 }
 
 export default SectionOne;

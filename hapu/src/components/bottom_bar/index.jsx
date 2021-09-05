@@ -41,6 +41,7 @@ export default class BottomBar extends Component {
                 <Copy>
                     <hr />
                     <p>Copyright © 2017 Hapu PTY Limited All rights reserved</p>
+                    <p>Teste desenvolvido por Paulo Daniel de Araújo - SkyDark - Mason</p>
                 </Copy>
             </>
 
@@ -48,3 +49,5 @@ export default class BottomBar extends Component {
     }
 }
 
+
+// desenvolvido por Paulo Daniel de Araújo - SkyDark - Mason
