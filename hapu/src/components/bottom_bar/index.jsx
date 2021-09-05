@@ -2,7 +2,7 @@ import { Component } from "react";
 import Image from 'next/image';
 
 //import styles
-import { Container, NavContent, IconsContent, Copy, Width } from './styles';
+import { Container, NavContent, IconsContent, Copy, Width, Divider } from './styles';
 
 //import assets
 import logoImg from '../../assets/icons/Logofooter.svg';
@@ -39,7 +39,7 @@ export default class BottomBar extends Component {
                     </IconsContent>
                 </Container>
                 <Copy>
-                    <hr />
+                <Divider />
                     <p>Copyright © 2017 Hapu PTY Limited All rights reserved</p>
                     <p>Teste desenvolvido por Paulo Daniel de Araújo - SkyDark - Mason</p>
                 </Copy>

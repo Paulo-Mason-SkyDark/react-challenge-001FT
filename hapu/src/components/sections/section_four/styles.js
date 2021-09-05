@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {device} from '../../../config/config_css_query/media_query_breakpoints';
 
 
 export const Container = styled.section`
@@ -32,11 +33,16 @@ export const Content = styled.section`
     line-height: 28px;
     text-align: center;
     color: #3D3D3D;
+    width: 784px;
+
+    @media ${device.mobileM}{
+      width: 328px;
+      margin: 0 16px;
+    }
 
   }
 
   > a {
-
 
     font-style: normal;
     font-weight: 500;
@@ -44,12 +50,26 @@ export const Content = styled.section`
     line-height: 24px;
     text-decoration-line: underline;
     color: #5E20A4;
+
+    @media ${device.mobileM}{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 0 16px;
+    }
+
+
   }
 
   > div {
     width: 984px;
     height: 392px;
     margin-top: 64px;
+
+    @media ${device.mobileM}{
+      width: 0%;
+      height: 0%;
+    }
   }
 `;
 
@@ -58,4 +78,10 @@ export const Divider = styled.hr`
     width: 60%;
     margin-bottom: 16px;
 
+    @media ${device.mobileM}{
+      width: 90%;
+    }
+
 `;
+
+//TODO: resolver problema de indentação seguir o mesmo padrão da section five

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import {device} from '../config/config_css_query/media_query_breakpoints';
 
 
 export default createGlobalStyle`
@@ -17,6 +18,12 @@ export default createGlobalStyle`
 
   body {
     background-color: #F2F2F2;
+
+    @media ${device.mobileM}{
+      width: 360px;
+    }
+
+
   }
 
   hr {

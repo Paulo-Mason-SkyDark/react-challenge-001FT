@@ -15,7 +15,7 @@ export default class SectionFive extends Component {
     render() {
         return (
             <Container>
-                <Image src={ImgBookChild} height="96"  alt="image book child"/>
+                <Image src={ImgBookChild} height="96" width="216" alt="image book child"/>
                 <TitleSection>Coming soon: Nanny Share Daily Diary!</TitleSection>
                 <Paragraph>With the Hapu daily diary your nanny will be 
                     able to update you and your sharers with photos 
