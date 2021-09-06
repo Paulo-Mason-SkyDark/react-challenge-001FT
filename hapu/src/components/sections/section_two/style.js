@@ -63,8 +63,30 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-}
+  }
 
+  @media(max-width: 900px) {
+
+    div {
+      width: 90%;
+
+      form input {
+        display: block;
+        
+      }
+      
+    }
+    
+    > div form input[type="text"],
+    div form input[type="email"] {
+      width: 100%;
+      margin: 24px 0;
+    }
+
+    > div form input[type="submit"] {
+      width: 100%;
+    }
+  }
 `;
 
 export const Divider = styled.hr`

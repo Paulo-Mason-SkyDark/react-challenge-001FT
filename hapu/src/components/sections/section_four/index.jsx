@@ -27,7 +27,7 @@ class SectionTwo extends Component {
                     <a href="">Read how Hapu’s tribal background defines our app </a>
 
                     <div>
-                        <Image className="teste" src={nannyImg} alt="Image Book" />
+                        <Image src={nannyImg} alt="Image Book" />
                     </div>
                     
                 </Content>

@@ -17,6 +17,11 @@ export const Card = styled.section`
     padding-right: 10px;
   }
 
+  @media(max-width: 900px) {
+        flex-direction: column;
+        padding: 24px 0;
+    }
+
 `;
 
 export const Container = styled.div`

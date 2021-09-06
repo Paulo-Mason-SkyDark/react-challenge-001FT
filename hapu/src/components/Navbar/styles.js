@@ -7,6 +7,10 @@ export const Container = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @media(max-width: 1000px) {
+        height: 100px;
+    }
 `;
 
 export const LeftContent = styled.div`
@@ -25,6 +29,15 @@ export const LeftContent = styled.div`
                 margin-left: 24px;
                 color: white;
             }
+        }
+    }
+
+    @media(max-width: 1000px) {
+        img {
+            width: 74px;
+        }
+        > nav {
+            display: none;
         }
     }
 `;
@@ -46,6 +59,12 @@ export const RightContent = styled.div`
             cursor: pointer;
         }
     }
+
+    @media(max-width: 1000px) {
+        > a {
+            display: none;
+        }
+    }
 `;
 
 export const ButtonPrimary = styled.button`
@@ -59,4 +78,9 @@ export const ButtonPrimary = styled.button`
 
     cursor: pointer;
     border: 0;
+
+    @media(max-width: 1000px) {
+        height: 56px;
+        font-size: 24px;
+    }
 `;
