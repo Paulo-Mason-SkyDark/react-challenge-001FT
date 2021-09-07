@@ -22,7 +22,6 @@ export const BoxImage = styled.div`
     margin-right: 40px;
 
     @media ${device.mobileM} {
-        display: flex;
         width: 312px;
         height: 230px;
         margin: 0px 24px 40px 24px;

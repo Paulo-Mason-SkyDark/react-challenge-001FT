@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {device} from '../../config/config_css_query/media_query_breakpoints';
 
 export const Container = styled.div`
     height: 64px;
@@ -8,9 +9,7 @@ export const Container = styled.div`
     align-items: flex-start;
     justify-content: space-between;
 
-    @media(max-width: 1000px) {
-        height: 100px;
-    }
+    
 `;
 
 export const LeftContent = styled.div`
@@ -32,9 +31,9 @@ export const LeftContent = styled.div`
         }
     }
 
-    @media(max-width: 1000px) {
+    @media(max-width: 360px) {
         img {
-            width: 74px;
+            
         }
         > nav {
             display: none;
@@ -68,19 +67,30 @@ export const RightContent = styled.div`
 `;
 
 export const ButtonPrimary = styled.button`
-    height: 36px;
-    border-radius: 2px;
-    font-size: 14px;
-    font-weight: 500;
-    background: #3cb54a;
-    color: white;
-    padding: 0 18px;
 
+
+    width:234px;
+    height: 44px;
+    background: #00A870;
+    padding: 0 18px;
+    border-radius: 4px;
     cursor: pointer;
     border: 0;
 
-    @media(max-width: 1000px) {
-        height: 56px;
-        font-size: 24px;
+    @media ${device.mobileM}{
+        margin-top: 16px;
+        margin-right: 16px;
     }
+
+    > h5 {
+        font-style: normal;
+        text-align: center;
+        color: #FFFFFF;
+        border-radius: 2px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+
+    
 `;

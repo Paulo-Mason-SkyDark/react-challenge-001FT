@@ -18,32 +18,47 @@
 }
 
 .section .description h2 {
-    font-size: 32px;
+
+    width: 490px;
+    font-style: normal;
     font-weight: 500;
-    color: white;
-    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+
 }
 
 .section .description p {
-    font-size: 16px;
-    font-weight: 400;
-    color: white;
+    width: 584px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
     margin-bottom: 32px;
 }
 
 .section .description .descriptionTwo {
     display: flex;
     align-items: center;
+    
 }
 
 .section .description .descriptionTwo span {
+
+    font-style: normal;
+    font-weight: 500;
     font-size: 16px;
-    font-weight: 400;
-    color: white;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
     margin-left: 18px;
 }
 
-@media(max-width: 1000px){
+@media(max-width: 360px){
     .container {
         height: 700px;
     }
@@ -52,18 +67,32 @@
        display: none;
    }
 
+
    .section .containerGrid {
         height: calc(700px - 100px);
        justify-content: center;
    }
 
    .section .description h2 {
-        font-size: 42px;
+        width: 272px;
+        margin: 0 44px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
         text-align: center;
+        color: #FFFFFF;
     }
 
     .section .description p {
-        font-size: 26px;
+        margin: 16px 16px 78px 16px;
+        width: 328px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
         text-align: center;
     }
 
@@ -71,7 +100,9 @@
         justify-content: center;
     }
 
+
+
     .section .description .descriptionTwo span {
-        font-size: 26px;
+        width: 246px;
     }
 }

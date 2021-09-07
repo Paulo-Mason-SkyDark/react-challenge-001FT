@@ -17,12 +17,12 @@ class SectionOne extends Component {
         <Card>
           <Image src={circleAvatar} alt="profile avatar" />
           <a href="">Sarah’s day care available now in North Sydney</a>
-          <span>Wednesday, Thursday, Friday - 7:30 - 5:30</span>
+          <h5>Wednesday, Thursday, Friday - 7:30 - 5:30</h5>
         </Card>
 
         <Container>
           <BoxContraints>
-            <TitleSection>Share your home, <br/> nanny and costs</TitleSection>
+            <TitleSection>Share your home, nanny and costs</TitleSection>
             <Paragraph>You have a fantastic home, a fantastic nanny
                and wouldn’t cutting your costs in half be, well, 
                fantastic?! If only it was easy to connect with
@@ -33,7 +33,7 @@ class SectionOne extends Component {
                 has the power to create new affordable solutions 
                 in childcare that work for 
                 you and your community.</Paragraph>
-            <ToLink href="#">Read how Bridget’s share (without Hapu) ended over $15</ToLink>
+            <div><ToLink href="#">Ready to get started?</ToLink></div>
           </BoxContraints>
           <BoxImage>
             <Image src={nannyImg} />

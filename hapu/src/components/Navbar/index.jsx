@@ -13,7 +13,7 @@ class NavBar extends Component {
         return (
             <Container>
                 <LeftContent>
-                    <Image src={logoImg} alt="logo hapu" />
+                    <div><Image src={logoImg} alt="logo hapu"  width="48" height="64"/></div>
                     <nav>
                         <ul>
                             <a href=""><li>Create Your Nanny Share</li></a>
@@ -25,7 +25,7 @@ class NavBar extends Component {
                 </LeftContent>
 
                 <RightContent>
-                    <ButtonPrimary>Become a Nanny Share Host</ButtonPrimary>
+                    <ButtonPrimary><h5>Become a Nanny Share Host</h5></ButtonPrimary>
                     <a href=""><span>Sign In</span></a>
                 </RightContent>
             </Container>

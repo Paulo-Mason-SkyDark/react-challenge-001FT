@@ -22,22 +22,24 @@ class Hero extends Component {
                     <div className={styles.containerGrid}>
                         <div className={styles.description}>
                             <h2>
-                                Easily create or join a local <br /> nanny share with Hapu
+                                Easily create or join a local nanny share with Hapu
                             </h2>
                             <p>
                                 Hapu is Airbnb for nanny share.
-                                Share your home, nanny and costs <br />
+                                Share your home, nanny and costs
                                 and create new flexible,
                                 affordable solutions in childcare.
                             </p>
                             <div className={styles.descriptionTwo}>
-                                <Image src={playButton} alt="PlayIcon" />
+                                <div className={styles.width}>
+                                    <Image src={playButton} alt="PlayIcon" />
+                                </div>
                                 <span>See hapu in action (27 seconds)</span>
                             </div>
                         </div>
                         <div className={styles.image}>
                             <div>
-                                <Image src={headerImgLeft} alt="" />
+                                <Image src={headerImgLeft} alt="logo secundary" />
                             </div>
                         </div>
                         

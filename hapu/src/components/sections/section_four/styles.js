@@ -27,13 +27,13 @@ export const Content = styled.section`
       display: flex;
       align-items: center;
       text-align: center;
-      margin: 64px 16px 16px 16px;
+      margin: 0px 16px 16px 16px;
     }
 
   }
 
   > p {
-    margin: 40px 0;
+    margin: 40px 328px 40px 328px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -63,7 +63,7 @@ export const Content = styled.section`
       display: flex;
       align-items: center;
       text-align: center;
-      margin: 0 16px;
+      margin: 0 16px 64px 16px;
     }
 
 
@@ -72,7 +72,7 @@ export const Content = styled.section`
   > div {
     width: 984px;
     height: 392px;
-    margin-top: 64px;
+    margin: 64px 228px 104px 228px;
 
     @media ${device.mobileM}{
       width: 0%;
@@ -90,6 +90,7 @@ export const Divider = styled.hr`
     @media ${device.mobileM}{
       width: 90%;
       margin-bottom: 0px;
+
     }
 
 `;

@@ -19,15 +19,16 @@ export default createGlobalStyle`
   body {
     background-color: #F2F2F2;
 
-    @media ${device.mobileM}{
-      width: 360px;
-    }
-
 
   }
 
   hr {
+    width: 60%;
     border: 1px solid #DFDFDF;
+
+    @media ${device.mobileM}{
+      width: 90%;
+    }
   }
 
 `;

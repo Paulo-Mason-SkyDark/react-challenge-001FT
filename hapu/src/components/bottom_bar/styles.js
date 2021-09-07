@@ -10,18 +10,48 @@ export const Container = styled.div`
     justify-content: space-around;
 
     @media ${device.mobileM}{
+        height: 250px;
         margin-top: 48px;
         flex-direction: column;
     }
 
 `;
 
-export const NavContent = styled.div`
-    > nav ul {
+export const NavContent = styled.div`   
+
+
+    margin-left: 11%;
+
+    @media ${device.mobileM}{
+        margin-top: 32px;
+        margin-left: 22%;
+    }
+
+    > div {
+        display: inline-block;
+        margin-bottom: 17px;
+        
+
+        > a {
+            margin-right: 30px;
+            margin-bottom: 17px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #3D3D3D;
+            text-decoration: none;
+        }
+    }
+    
+
+
+    /* > nav ul {
         display: flex;
         list-style: none;
         margin-left: 12px;
-        
+
         > a {
             text-decoration: none;
 
@@ -35,7 +65,7 @@ export const NavContent = styled.div`
                 color: #3D3D3D;
             }
         }
-    }
+    } */
 `;
 
 export const IconsContent = styled.div`
@@ -44,13 +74,6 @@ export const IconsContent = styled.div`
     display: flex;
     justify-content:center;
     cursor: pointer;
-
-    @media ${device.mobileM}{
-        margin-top: 24px;
-    }
-
-
-
 
 `;
 
@@ -74,6 +97,10 @@ export const Copy = styled.div`
     color: #3D3D3D;
     mix-blend-mode: normal; 
     opacity: 0.6;
+
+    @media ${device.mobileM}{
+        padding: 0px 0px 40px 0px;
+    }
 `;
 
 export const Divider = styled.hr`

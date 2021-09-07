@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import {device} from '../../config/config_css_query/media_query_breakpoints';
 
 export const FooterContainer = styled.footer`
     margin-top: 80px;
@@ -15,17 +15,39 @@ export const ContentWrapper = styled.main`
    
 
     > h2 {
+        font-style: normal;
         font-size: 28px;
         font-weight: 500;
         text-align: center;
-        margin-bottom: 24px;
+        line-height: 32px;
+        color: #3D3D3D;
+
+        margin-bottom: 16px;
+
+        @media ${device.mobileM}{
+            margin-bottom: 0px;
+            font-size: 22px;
+
+        }
+
     }
 
     > p {
-        font-size: 16px;
-        font-weight: 400;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
         text-align: center;
-        margin-bottom: 24px;
+        color: #3D3D3D;
+        margin-bottom: 32px;
+
+
+
+        @media ${device.mobileM}{
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 24px
+        }
     }
 
     > a {
@@ -33,17 +55,22 @@ export const ContentWrapper = styled.main`
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
-        /* identical to box height, or 150% */
-
         display: flex;
         align-items: center;
         text-align: center;
         text-decoration-line: underline;
+        color: #5E20A4;
 
-        /* Brand color / Secondary */
-
-color: #5E20A4;
+        @media ${device.mobileM} {
+            margin-top: 24px;
+        }
     }
+
+
+   
+
+
+
 `;
 
 export const ButtonCreateNany = styled.button`
@@ -54,6 +81,14 @@ export const ButtonCreateNany = styled.button`
     display: flex;
     align-items: center;
     flex-direction: row;
+    
+
+    @media ${device.mobileM}{
+            margin: 0 28px;
+            padding: 20px 22px;
+            width: 304px;
+            height: 68px;
+        }
 
 
     cursor: pointer;
@@ -70,8 +105,10 @@ export const ButtonCreateNany = styled.button`
         line-height: 28px;
         display: flex;
         align-items: center;
-
         color: #FFFFFF;
+
+        
+
     }
 
     > div p {

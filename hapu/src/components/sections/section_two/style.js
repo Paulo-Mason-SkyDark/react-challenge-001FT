@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {device} from '../../../config/config_css_query/media_query_breakpoints';
 
 
 
@@ -126,6 +127,11 @@ export const TitleSection = styled.h3`
     align-items: center;
     text-align: center;
     color: #3D3D3D;
+
+    @media ${device.mobileM} {
+      padding-bottom: 16px;
+      width: 328px;
+    }
     
 
 `;
@@ -139,6 +145,15 @@ export const Paragraph = styled.p`
   text-align: center;
   color: #3D3D3D;
   width: 65%;
+
+  @media ${device.mobileM}{
+
+    font-size: 16px;
+    line-height: 28px;
+    width: 328px;
+
+
+  }
 
   
   
